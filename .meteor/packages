@@ -21,3 +21,4 @@ session
 twbs:bootstrap
 iron:router
 accounts-password
+check
