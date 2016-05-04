@@ -8,5 +8,5 @@ Template.personalInfo.events({
 });
 
 Template.personalInfo.helpers({
-    verified: isNotVerified()
+    verified: isNotVerified
 });

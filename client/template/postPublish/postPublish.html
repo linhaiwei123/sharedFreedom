@@ -1,3 +1,51 @@
 <template name="postPublish">
-    
+     <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+                <form>
+                    <input type="text" class="form-control" name="title" id="title" placeholder="标题">
+
+                    <div style="padding:10px">
+                    </div>
+                    
+                    <input type="text" class="form-control" name="content" id="content" placeholder="具体内容/时间/地点">
+
+                    <div style="padding:10px">
+                    </div>
+
+                    <input type="text" class="form-control" name="telephone" id="telephone" placeholder="联系方式">
+
+                    <div style="padding:10px">
+                    </div>
+                    
+                    <input type="text" class="form-control" name="money" id="money" placeholder="金额">
+
+                    <div style="padding:10px">
+                    </div>
+
+                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-danger" id="firstInFirstGet" name="firstInFirstGet">先到先得</button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-success" id="compactWithOther" name="compactWithOther">多人竞标</button>
+                        </div>
+                    </div>
+                    
+                    <div style="padding:10px">
+                    </div>
+                    
+                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                        <div class="btn-group" role="group">
+                            <button type="submit" class="btn btn-info" name="publish">发布</button>
+                        </div>
+                    </div>
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
 </template>
