@@ -3,7 +3,10 @@
         <div class="panel panel-default">
             <div class="panel-body">
 
-                    {{# if verified}}<div class="alert alert-danger" role="alert">请前往邮箱进行注册验证</div>{{/if}}
+                    {{# if verified}}<div class="alert alert-danger" role="alert">请前往邮箱进行注册验证</div>
+                    {{else}}
+                        {{> postList}}
+                    {{/if}}
 
                     <div style="padding:10px">
                     </div>

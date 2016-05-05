@@ -9,14 +9,16 @@ Template.postPublish.events({
         var getType = event.target.getType.dataset.gettype;
         // console.log({title,content,telephone,money,getType});
         console.log( Meteor.user() );
-        Meteor.call('postPublish',{
+        Meteor.call('postModify',{
             title : title,
             content : content,
             telephone : telephone,
             money : money,
             getType : getType,
             userInfo: Meteor.user(),
-        });
+        }
+        
+        );
         
     },
     
