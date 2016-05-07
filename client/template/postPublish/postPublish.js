@@ -21,7 +21,9 @@ Template.postPublish.events({
     },
     
     'click #getType': function(event) {
+        
         if( event.target.dataset.gettype === 'firstInFirstGet' ) {
+            
             event.target.classList.remove('btn-danger');
             event.target.classList.add('btn-success');
             event.target.innerText = '多人竞标'

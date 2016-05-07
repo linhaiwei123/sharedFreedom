@@ -1,7 +1,10 @@
 Meteor.methods({
-    'postModify': function(info,postId) {
+    'postModify': function(info) {
+                        console.log('here');
+                        console.log(info);
+                        console.log(info.postId);
                         Post.update({
-                            _id: postId
+                            _id: info.postId
                             },
                             { $set : {
                                       info: info,

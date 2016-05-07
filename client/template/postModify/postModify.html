@@ -4,29 +4,29 @@
             <div class="panel-body">
 
                 <form>
-                    <input type="text" class="form-control" name="title" id="title" placeholder="标题">
+                    <input type="text" class="form-control" name="title" id="title" placeholder="标题" value={{infoPackage.info.title}}>
 
                     <div style="padding:10px">
                     </div>
                     
-                    <input type="text" class="form-control" name="content" id="content" placeholder="具体内容/时间/地点">
+                    <input type="text" class="form-control" name="content" id="content" placeholder="具体内容/时间/地点" value={{infoPackage.info.content}}>
 
                     <div style="padding:10px">
                     </div>
 
-                    <input type="text" class="form-control" name="telephone" id="telephone" placeholder="联系方式">
-
+                    <input type="text" class="form-control" name="telephone" id="telephone" placeholder="联系方式" value={{infoPackage.info.telephone}}>
+                        
                     <div style="padding:10px">
                     </div>
                     
-                    <input type="text" class="form-control" name="money" id="money" placeholder="金额">
-
+                    <input type="text" class="form-control" name="money" id="money" placeholder="金额" value={{infoPackage.info.money}}>
+                         
                     <div style="padding:10px">
                     </div>
 
                     <div class="btn-group btn-group-justified" role="group" aria-label="...">
                         <div class="btn-group" role="group">
-                            <button type="button" class="btn btn-danger" id="getType" name="getType" data-gettype="firstInFirstGet" >先到先得</button>
+                            <button type="button" class="btn" id="getType" name="getType" data-gettype={{infoPackage.info.getType}} >先到先得</button>
                         </div>
                     </div>
                     
@@ -35,7 +35,7 @@
                     
                     <div class="btn-group btn-group-justified" role="group" aria-label="...">
                         <div class="btn-group" role="group">
-                            <button type="submit" class="btn btn-info" name="publish">修改</button>
+                            <button type="submit" class="btn btn-info" name="publish">重新发布</button>
                         </div>
                     </div>
 
